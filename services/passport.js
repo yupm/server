@@ -32,6 +32,7 @@ passport.use(new GoogleStrategy({
                 done(null, existingUser);
             }
             else{
+                console.log("Create user");
                 new User({ googleId: profile.id })
                 .save()
                 .then(user => done(null, user));
