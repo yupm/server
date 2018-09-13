@@ -5,7 +5,7 @@ import { connect} from 'react-redux';
 import * as actions from '../actions';
 import Landing from './Landing';
 
-const Dashboard = () => <h2>Dashboard</h2>;
+import Dashboard from './Dashboard';
 const SurveyNew = () => <h2>SurveyNew</h2>;
  //BrowserRouter expects at most 1 child
 
